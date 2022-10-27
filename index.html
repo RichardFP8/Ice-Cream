@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Ice Cream Order</title>
+</head>
+
+<body>
+    <form>
+        <div class="general">
+            <label for="numOfScoops" id="numScoops">Number of scoops
+                <input id="numOfScoops" type="number" required  /></label>
+            <label for="cone"><input id="cone" type="radio" name="holder" /> Cone</label>
+            <label for="cup"><input id="cup" type="radio" name="holder" /> Cup </label>
+            
+                <div id="press">
+                    <p id="heading">Toppings</p>
+                    <div id="toppings">
+                        <label for="sprinkles"><input id="sprinkles" type="checkbox" /> Sprinkles ($0.50)</label>
+                        <label for="cream"><input id="cream" type="checkbox" /> Whipped Cream ($0.25)</label>
+                        <label for="fudge"><input id="fudge" type="checkbox" /> Hot Fudge ($1.25)</label>
+                        <label for="cherry"><input id="cherry" type="checkbox" /> Cherry ($0.25)</label>
+                    </div>
+                </div>
+   
+            <input id="submit" type="button" value="Submit Order" />
+            <p id="error"></p>
+
+            <div class="return">
+                <p>Base Price: <span id="basePrice"></span></p>
+                <p>Tax: <span id="tax"></span></p>
+                <p>Total Due: <span id="totalDue"></span></p>
+            </div>
+
+        </div>
+    </form>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
